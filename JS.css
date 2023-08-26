@@ -53,11 +53,12 @@
     height: 500px;
     margin: 100px auto;
     background-color: rgb(45, 45, 155);
-    padding: 10px 20px 0 10px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgb(128, 128, 128, 0.5);
 }
 .calculatorA {
+    width: 90%;
+    margin: 10px auto;
     display: grid;
     grid-template-rows: 1fr 2fr 0.5fr;
 }
