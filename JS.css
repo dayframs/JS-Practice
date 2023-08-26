@@ -5,14 +5,20 @@
     font-size: 20px;
     overflow-x: hidden;
 }
-.jsp1 {
-    width: 500px;
+h3 {
+    width: 300px;
     margin: 10px auto;
+    color: brown;
+    margin-bottom: 25px;
+}
+.jsp1 {
+    width: 450px;
+    margin: 5px auto;
     text-align: center;
-    overflow: hidden;
+    margin-bottom: 80px;
 }
     .inp1 {
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 10px;
     height: 35px;
     border: 2px solid rgb(106, 71, 71, 0.3);
@@ -27,6 +33,7 @@
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 800;
+    margin-top: -10px;
 }
 #btn1:active {
     transform: scaleX(120%);
@@ -51,16 +58,17 @@
 .calculator {
     width: 300px;
     height: 500px;
-    margin: 100px auto;
+    margin: 10px auto;
+    margin-bottom: 50px;
     background-color: rgb(45, 45, 155);
-    padding: 10px 20px 0 10px;
+    padding: 10px 10px 0 10px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgb(128, 128, 128, 0.5);
-    overflow: hidden;
 }
 .calculatorA {
     display: grid;
-    grid-template-rows: 1fr 2fr 0.5fr;
+    grid-template-rows: 1fr 2fr 0.35fr;
+    overflow-y: hidden;
 }
 .calcA1 {
     display: flex;
@@ -97,8 +105,8 @@
     gap: 3px;
     align-items: center;
     justify-content: center;
-    grid-template-columns: 2fr 2fr 2fr 1fr;
-    gap: 10px;
+    grid-template-columns: 2fr 2fr 2fr 1.2fr;
+    gap: 8px;
     margin-top: 10px;
 }
 .inp2, .btn2 {
@@ -112,7 +120,12 @@
     border: 1px solid grey;
     cursor: pointer;
     font-weight: 600;
-    box-shadow: 3px 3px 3px black;
+    box-shadow: 2px 2px 2px 1px rgb(0, 0, 0, 0.7);
+}
+@media (max-width: 600px) {
+    .inp2, .btn2 {
+         font-size: 18px;
+    }
 }
 #btn2 {
     background-color: yellow;
