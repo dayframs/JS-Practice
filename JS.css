@@ -8,6 +8,7 @@
     width: 500px;
     margin: 10px auto;
     text-align: center;
+    overflow-x: hidden;
 }
     .inp1 {
     margin-top: 50px;
@@ -54,6 +55,7 @@
     padding: 10px 20px 0 10px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgb(128, 128, 128, 0.5);
+    overflow: hidden;
 }
 .calculatorA {
     display: grid;
@@ -70,7 +72,7 @@
     width: 235px;
     height: 70px;
     display: flex;
-    background-color: rgb(50, 47, 47);
+    background-color: rgb(70, 66, 66);
     color: antiquewhite;
     align-items: center;
     justify-content: left;
@@ -109,6 +111,7 @@
     border: 1px solid grey;
     cursor: pointer;
     font-weight: 600;
+    box-shadow: 3px 3px 3px black;
 }
 #btn2 {
     background-color: yellow;
