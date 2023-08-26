@@ -1,14 +1,13 @@
 function multiply() {
     myResult.innerText = inp1.value * inp2.value;
 }
-function display(value) {
-    document.getElementById('displayResult').innerText += value;
+function display(y) {
+    displayResult.innerText += y;
 }
 function calculate() {
-    let x = document.getElementById('displayResult').innerText;
-    y = eval(x);
-    document.getElementById('displayResult').innerText = y;
+    let z = displayResult.innerText;
+    displayResult.innerText = eval(z);
 }
 function clearDisplay() {
-    document.getElementById('displayResult').innerText = "";
+    displayResult.innerText = "";
 }
