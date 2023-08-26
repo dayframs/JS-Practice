@@ -126,10 +126,14 @@ h3 {
     box-shadow: 2px 2px 2px 1px rgb(0, 0, 0, 0.7);
 }
 @media (max-width: 600px) {
-    .inp2, .btn2 {
-         font-size: 18px;
-    }
+.inp2, .btn2 {
+    font-size: 18px;
 }
+.calculatorA {
+    width: 85%;
+}
+}
+
 #btn2 {
     background-color: yellow;
     color: rgb(66, 63, 63);
