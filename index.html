@@ -20,8 +20,6 @@
         <div class="calculatorA">
         <div class="calcA1">
             <div id="result"></div>
-            <button class="btn2" value="C" onclick="deleteLast()" id="clear">D</button>
-            <button class="btn2" value="C" onclick="clearA()" id="clear">C</button>
         </div>
         <div class="calcA2">
             <div>
@@ -35,7 +33,7 @@
                     <input class="inp2" type="button" value="1" onclick="display('1')">
                 </div>
                 <div>
-                    <input class="inp2" type="button" value="." onclick="display('.')">
+                    <input class="inp2" type="button" value="00" onclick="display('00')">
                 </div>
             </div>
            <div>
@@ -63,7 +61,7 @@
                     <input class="inp2" type="button" value="3" onclick="display('3')">
                 </div>
                 <div>
-                    <button id="btn2" class="btn2" onclick="calculateA()">=</button>
+                    <input class="inp2" type="button" value="." onclick="display('.')">
                 </div>
             </div>
             <div class="div4">
@@ -81,9 +79,18 @@
                 </div>
             </div>
         </div>
-        <div class="calcA3">Dayframs&#169;</div>
+        <div class="calcA3">
+                <button class="btn2" value="C" onclick="clearA()" id="clear">Clear</button>
+                <button class="btn2" value="C" onclick="deleteLast()" id="clear">DEL</button>
+                <div>
+                    <button id="btn2" class="btn2" onclick="calculateA()">=</button>
+                </div>
+        </div>
+        <div class="calcA4">Dayframs&#169;</div>
         </div> 
     </section>
+
+
     <h3>Class explanation</h3>
     <section>
         <div class="bulbcontainer">
@@ -101,6 +108,17 @@
             <div id="userNameResult"></div>
         </div>
     </section>
+
+
+    <h3>Grading of input value</h3>
+    <section>
+        <div class="grading">
+            <input id="scores" type="text">
+            <button onclick="grading()">ENTER</button>
+            <p id="results"></p>
+        </div>
+    </section>
+
     <script type="text/javascript" src="./JS.js">
         
     </script>

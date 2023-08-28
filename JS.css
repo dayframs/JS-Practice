@@ -58,7 +58,7 @@ h3 {
 }
 .calculator {
     width: 300px;
-    height: 500px;
+    height: 550px;
     margin: 10px auto;
     margin-bottom: 100px;
     background-color: rgb(45, 45, 155);
@@ -71,15 +71,14 @@ h3 {
     width: 90%;
     margin: 10px auto;
     display: grid;
-    grid-template-rows: 1fr 2fr 0.35fr;
+    grid-template-rows: 0.5fr 1fr 0.3fr 0.15fr;
     overflow-y: hidden;
 }
 .calcA1 {
     display: flex;
     gap: 3px;
-    align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 25px;
 }
 #result {
     width: 235px;
@@ -96,12 +95,9 @@ h3 {
     padding-left: 5px;
 }
 #clear {
-    width: 40px;
-    height: 70px;
     cursor: pointer;
-    background-color: yellow;
+    background-color: white;
     color: rgb(66, 63, 63);
-    margin-top: 18px;
     font-weight: 600;
 }
 .calcA2 {
@@ -111,7 +107,6 @@ h3 {
     justify-content: center;
     grid-template-columns: 2fr 2fr 2fr 1.2fr;
     gap: 8px;
-    margin-top: 10px;
 }
 .inp2, .btn2 {
     height: 50px;
@@ -144,8 +139,13 @@ h3 {
     transform: scale(110%);
 }
 .calcA3 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 0.55fr;
+    gap: 7px;
+    overflow: hidden;
+}
+.calcA4 {
     display: flex;
-    align-items: center;
     justify-content: right;
     color: white;
     font-style: italic;
@@ -188,6 +188,7 @@ h3 {
 .username {
     width: 400px;
     margin: 10px auto;
+    margin-bottom: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -204,4 +205,21 @@ h3 {
     align-items: center;
     justify-content: center;
     margin: 20px auto;
+}
+.grading {
+    width: 400px;
+    margin: auto;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.grading button {
+    background-color: blueviolet;
+    color: antiquewhite;
+    cursor: pointer;
+    border: none;
+} 
+.grading input,
+.grading button {
+    padding: 10px;
+    border-radius: 4px;
 }

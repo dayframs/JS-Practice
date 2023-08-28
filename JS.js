@@ -99,4 +99,19 @@ function compareUserName() {
           input2.value = "";
      }
 }
+function grading() {
+     let studentScore = scores.value;
+     if (studentScore<0 || studentScore>100) {
+          results.innerText = "Invalid";     
+     } else if (studentScore <= 39) {
+          results.innerText = "Fail";
+     }else if (studentScore <= 49) {
+          results.innerText = "Pass";
+     }else if (studentScore <= 69) {
+          results.innerText = "Credit";
+     }
+     else {
+          results.innerText = "Excellent";
+     }
+}
    
