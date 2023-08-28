@@ -80,4 +80,23 @@ function switchBulb() {
                displayBulb.src="offbulb.jpg";
                btn3.innerText="on";
             }  
-        }
+} 
+
+
+function compareUserName() {
+     let inp1 = input1.value;
+     let inp2 = input2.value;
+     if (inp1==inp2)
+     {
+          userNameResult.innerText = "Welcome " + inp1;
+          input1.value = "";
+          input2.value = "";
+     }
+     else
+     {
+          userNameResult.innerText = "Names does not match";
+          input1.value = "";
+          input2.value = "";
+     }
+}
+   

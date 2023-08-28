@@ -177,8 +177,29 @@ h3 {
     font-size: 28px;
     font-weight: 800;
     box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.3);
+    cursor: pointer;
 }
 .bulbcontainer button:active {
     transform: scale(110%);
     background-color: rgb(127, 255, 212, 0.5);
+}
+.username {
+    width: 400px;
+    margin: 90px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(155, 242, 242);
+    padding: 20px;
+}
+.username div {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
 }
