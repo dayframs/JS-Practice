@@ -20,46 +20,47 @@
         <div class="calculatorA">
         <div class="calcA1">
             <div id="result"></div>
+            <button class="btn2" value="C" onclick="deleteLast()" id="clear">D</button>
             <button class="btn2" value="C" onclick="clearA()" id="clear">C</button>
         </div>
         <div class="calcA2">
             <div>
                 <div>
-                    <input class="inp2" type="button" value="7" onclick="display7()">
+                    <input class="inp2" type="button" value="7" onclick="display('7')">
                 </div>
                 <div>
-                    <input class="inp2" type="button" value="4" onclick="display4()">
+                    <input class="inp2" type="button" value="4" onclick="display('4')">
                 </div>
                 <div>
-                    <input class="inp2" type="button" value="1" onclick="display1()">
+                    <input class="inp2" type="button" value="1" onclick="display('1')">
                 </div>
                 <div>
-                    <input class="inp2" type="button" value="." onclick="displayDot()">
+                    <input class="inp2" type="button" value="." onclick="display('.')">
                 </div>
             </div>
            <div>
                 <div>
-                    <input class="inp2" type="button" value="8" onclick="display8()">
+                    <input class="inp2" type="button" value="8" onclick="display('8')">
                 </div>
                 <div>
-                    <input class="inp2" type="button" value="5" onclick="display5()">
+                    <input class="inp2" type="button" value="5" onclick="display('5')">
                 </div>
                 <div>
-                    <input class="inp2" type="button" value="2" onclick="display2()">
+                    <input class="inp2" type="button" value="2" onclick="display('2')">
                 </div>
                 <div>
-                    <input class="inp2" type="button" value="0" onclick="display0()">
+                    <input class="inp2" type="button" value="0" onclick="display('0')">
                 </div>
             </div>
             <div>
                 <div>
-                    <input class="inp2" type="button" value="9" onclick="display9()">
+                    <input class="inp2" type="button" value="9" onclick="display('9')">
                 </div>
                 <div>
-                    <input class="inp2" type="button" value="6" onclick="display6()">
+                    <input class="inp2" type="button" value="6" onclick="display('6')">
                 </div>
                 <div>
-                    <input class="inp2" type="button" value="3" onclick="display3()">
+                    <input class="inp2" type="button" value="3" onclick="display('3')">
                 </div>
                 <div>
                     <button id="btn2" class="btn2" onclick="calculateA()">=</button>
@@ -67,24 +68,31 @@
             </div>
             <div class="div4">
                 <div>
-                    <input class="inp2" type="button" value="+" onclick="displayA()">
+                    <input class="inp2" type="button" value="+" onclick="display('+')">
                 </div>
                 <div>
-                    <input class="inp2" type="button" value="-" onclick="displayS()">
+                    <input class="inp2" type="button" value="-" onclick="display('-')">
                 </div>
                 <div>
-                    <input class="inp2" type="button" value="&#247;" onclick="displayD()">
+                    <input class="inp2" type="button" value="&#247;" onclick="display('/')">
                 </div>
                 <div>
-                    <input class="inp2" type="button" value="x" onclick="displayM()">
+                    <input class="inp2" type="button" value="x" onclick="display('*')">
                 </div>
             </div>
         </div>
         <div class="calcA3">Dayframs&#169;</div>
         </div> 
     </section>
+    <h3>Class explanation</h3>
+    <section>
+        <div class="bulbcontainer">
+            <img id="displayBulb" src="offbulb.jpg"> 
+            <button id="btn3" onclick="switchBulb()">on</button>
+        </div>
+    </section>
     <script type="text/javascript" src="./JS.js">
-
+        
     </script>
 </body>
 </html>
