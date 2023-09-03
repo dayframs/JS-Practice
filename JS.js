@@ -114,4 +114,15 @@ function grading() {
           results.innerText = "Excellent";
      }
 }
-   
+let x;
+function myFunc() {
+     let inp4 = input4.value;
+     input4.value = inp4 - 1;
+     if (inp4 <= 1) {
+          clearInterval(x);
+     }
+}
+function startReduction() {
+     x = setInterval(myFunc, 1000);
+     }
+

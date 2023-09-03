@@ -206,7 +206,7 @@ h3 {
     justify-content: center;
     margin: 20px auto;
 }
-.grading {
+.grading, .interval {
     width: 400px;
     margin: auto;
     margin-bottom: 60px;
@@ -219,7 +219,15 @@ h3 {
     border: none;
 } 
 .grading input,
-.grading button {
+.grading button,
+.interval input,
+.interval button {
     padding: 10px;
     border-radius: 4px;
 }
+.interval button {
+    background-color: orange;
+    color: antiquewhite;
+    cursor: pointer;
+    border: none;
+} 
