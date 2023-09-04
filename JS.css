@@ -220,14 +220,40 @@ h3 {
 } 
 .grading input,
 .grading button,
-.interval input,
-.interval button {
+.interval input {
     padding: 10px;
     border-radius: 4px;
 }
+.interval input {
+    height: 180px;
+    width: 250px;
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.interval {
+    border: 2px solid grey;
+    width: 320px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgb(128, 128, 128, 0.4);
+}
+ 
 .interval button {
     background-color: orange;
     color: antiquewhite;
     cursor: pointer;
     border: none;
+    width: 70px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 5px;
+    margin: 5px;
+    border-radius: 4px;
 } 
+#btn6 {
+    background-color: brown;
+}
+#btn7 {
+    background-color: blue;
+}

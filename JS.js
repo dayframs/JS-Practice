@@ -118,11 +118,20 @@ let x;
 function myFunc() {
      let inp4 = input4.value;
      input4.value = inp4 - 1;
-     if (inp4 <= 1) {
+
+     if (inp4 <= 0) {
           clearInterval(x);
+          input4.value = '0';
      }
 }
 function startReduction() {
      x = setInterval(myFunc, 1000);
      }
 
+function stopReduction() {
+     clearInterval(x);
+}
+function reset() {
+     input4.value = '50';
+     clearInterval(x);
+}
